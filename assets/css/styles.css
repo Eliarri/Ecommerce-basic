@@ -76,10 +76,13 @@ hr {
     color: var(--blanco);
 }
 
+.contenedor {
+    width: 100%;
+}
   /* Grid Area */
 .grid-areas {
     display: grid;
-    grid-template-columns: 20rem 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 10rem auto 10rem;
     grid-template-areas: 
     "header header"
@@ -109,6 +112,11 @@ hr {
 .contenedor-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 768px) {
+    .contenedor-cards {
+        grid-template-columns: 1fr;
+    }
 }
 .card {
     width: 40rem;
